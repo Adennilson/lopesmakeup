@@ -24,11 +24,11 @@ imagens.forEach((imagem, index) => {
 imagem.addEventListener('click', () => mostrarImagem(index));
 });
 
-setInterval(() => mostrarImagem(), 3000);
+setInterval(() => mostrarImagem(), 5000);
 mostrarImagem(); // Mostra a primeira imagem
 }
 
-setInterval(() => mostrarImagem(), 3000);
+setInterval(() => mostrarImagem(), 5000);
 function adicionarProduto(imagem, nome, descricao, preco) {
 const produtos = document.querySelector('.caixa');
 const novoProduto = document.createElement('div');
