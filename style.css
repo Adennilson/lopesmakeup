@@ -1,0 +1,177 @@
+/* Estilos gerais */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+}
+
+.fixa {
+  background-color: #e793c6;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header {
+  box-shadow: 1px 1px 2px rgba(0, 0, 1, 0.4);
+  background-color: #e793c6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.pesquisa {
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border: none;
+  margin: 2px 9px;
+}
+
+.pesquisa input {
+  border: none;
+  font-size: 16px;
+  flex-grow: 1;
+  padding: 5px;
+  background-color: transparent;
+}
+
+.pesquisa .material-icons {
+  color: #a6a6a6;
+  font-size: 24px;
+}
+input:focus{
+  outline: none;
+  color: #a6a6a6;
+}
+
+.banner {
+  overflow: hidden;
+  width: 96%;
+  margin: 10px auto;
+  height: 300px;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.espaco {
+  background-color: #f4f4f4;
+  height: 80px;
+}
+
+main {
+  margin-top: 10px;
+  padding: 0 20px;
+}
+
+.caixa {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.produto {
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.produto img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+  border-bottom: 3px solid #e793c6;
+  margin-bottom: 10px;
+}
+
+.produto h3 {
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.produto p{
+  
+  height: 55px; /* Limita a 3 linhas */
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+
+.preco {
+  color: #e793c6;
+  font-weight: bold;
+}
+
+button {
+  background-color: #24cd63;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px auto;
+  display: block;
+  cursor: pointer;
+}
+
+button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer h4 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+footer .roda {
+  color: #e793c6;
+}
+
+footer .cep {
+  font-size: 10px;
+  padding: 5px;
+}
+
+footer .oficial {
+  font-size: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 700px) {
+  .caixa {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+  }
+}
